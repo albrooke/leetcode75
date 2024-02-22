@@ -1,11 +1,11 @@
 #include <stdlib.h>
 #include <unordered_map>
 
-//Give an target num, find two integers in an array who's sum is target, return their indices
+//Given a target number, find two integers in an array nums who's sum is = target, return their indices
 //Method:
 // A) create an empty hashmap
-// B) iterate through the array and checking if the difference (target - nums[i]) exists in the hash map
-//if it does, we return hashMap diiference location and nums[i]
+// B) iterate through the nums array and check if the difference (target - nums[i]) exists in the hash map
+//if it does, we return hashMap difference index and index at nums 
 // C) if it doesn't exist we update hashmap with nums[i] that we checked
 
 
