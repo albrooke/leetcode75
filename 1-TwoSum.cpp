@@ -19,8 +19,9 @@ public:
             //calculate diff = target - nums;
             int difference = target - nums[i];
 
-        //check difference in map alreayd in map, return indices [diff], i 
-        //.count(checks if present) true is 1
+        //check if difference is hashmap, return indices [diff], i 
+        //note first num in vector will be not be found so added to hashmap
+        //this first num is later checked again 
             if(hashMap.count(difference) > 0) {
                 return { 
         //difference is mapped to its index
