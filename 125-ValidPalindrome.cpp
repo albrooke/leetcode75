@@ -41,13 +41,29 @@ public:
     }
 };
 
-/* could also create a new string
-newStr = ""
-for c in s:
-if c.isalnum():
-    newStr += c.lower()
-return newStr=
+/* less optimal way is creating a new string
 
+#include <string>
+#include <cctype>
 
+class Solution {
+public:
+    bool isPalindrome(std::string s) {
+                //initialize new string
+        std::string newStr = "";
+                //iterate through chars in string
+        for (char c : s) {
+                //if is alnum add lowercase to newStr
+            if (std::isalnum(c)) {
+                newStr += std::tolower(c);
+            }
+        } //return T/F comparison of the created newStr and its reverse 
+                //How: string ranger constructor (7):
+                //string (iterator first, iterator last)
+                //rbegin() is a reverse iterator pointing to last char
+                //rend() points to first char 
+        return newStr == std::string(newStr.rbegin(), newStr.rend());
+    }
+};
 
 */
