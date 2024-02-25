@@ -3,7 +3,7 @@
 //Given an integer array nums, return true if any value appears at least twice
 //in the array, and return false if every element is distinct.
 
-//options: A- add to set, check set size to vector siz
+//options: A- add to set, check set size to vector size
 //B- unordered map should work: increase count, check count
 //C- 2 pointer solution 
 //bruteforce solution  to nested loops
